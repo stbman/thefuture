@@ -498,7 +498,6 @@
           </b-row>
           <br/>
 
-
           <h5>Your Friends</h5>
           <b-table class="mb-0 table-outline" responsive="sm" hover :items="tableItems" :fields="tableFields" head-variant="light" align="left">
             <div slot="avatar" class="avatar" slot-scope="item">
@@ -619,13 +618,13 @@ export default {
       ],
       tableFields: {
         avatar: {
-          label: '<i class="icon-people"></i>',
+          label: '<i class="icon-people"></i>'
         },
         user: {
           label: 'Friend'
         },
         country: {
-          label: 'Current Course',
+          label: 'Current Course'
         },
         usage: {
           label: 'Completion'
