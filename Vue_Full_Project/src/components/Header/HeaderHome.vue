@@ -8,8 +8,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <b-navbar-nav class="d-md-down-none">
-      <b-nav-item class="px-3">WAHAHHAA</b-nav-item>
-      <b-nav-item class="px-3">Users</b-nav-item>
+      <b-nav-item class="px-3">My Courses</b-nav-item>
+      <b-nav-item class="px-3">My Journey</b-nav-item>
       <b-nav-item class="px-3">Settings</b-nav-item>
     </b-navbar-nav>
     <b-navbar-nav class="ml-auto">
