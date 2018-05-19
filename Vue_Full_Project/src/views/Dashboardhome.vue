@@ -2,7 +2,7 @@
   <div class="animated fadeIn">
     <b-row>
       <b-col sm="6" lg="3">
-      <h2>Top Courses</h2>
+        <h2>Top Courses </h2>
       </b-col>
     </b-row>
     <b-row>
@@ -18,14 +18,14 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">Data Analytics Begins with Me</h4>
-            <p>142 people attended</p>
+            <h4 class="mb-0">Data Analytics Begins With Me</h4>
+            <p>142 attended</p>
           </b-card-body>
           <card-line1-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
       </b-col>
       <b-col sm="6" lg="3">
-        <b-card no-body class="bg-info">
+        <b-card no-body class="bg-success">
           <b-card-body class="pb-0">
             <b-dropdown class="float-right" variant="transparent p-0" right no-caret>
               <template slot="button-content">
@@ -36,8 +36,8 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">Machine Learning For The Future</h4>
-            <p>234 people attended</p>
+            <h4 class="mb-0">Machine Learning with Python</h4>
+            <p>130 attended</p>
           </b-card-body>
           <card-line2-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
@@ -54,8 +54,8 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">Baking and Flower Arrangement</h4>
-            <p>431 people attended</p>
+            <h4 class="mb-0">Flower Bouquets & Arrangement</h4>
+            <p>100 attended</p>
           </b-card-body>
           <card-line3-chart-example class="chart-wrapper" style="height:70px;" height="70"/>
         </b-card>
@@ -72,146 +72,104 @@
               <b-dropdown-item>Something else here...</b-dropdown-item>
               <b-dropdown-item disabled>Disabled action</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">Adult Korean Classes</h4>
-            <p>623 people attended</p>
+            <h4 class="mb-0">Adult Korean Language Class</h4>
+            <p>80 attended</p>
           </b-card-body>
           <card-bar-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
       </b-col>
     </b-row>
 
-    <b-card>
-      <b-row>
-        <b-col sm="5">
-          <h4 id="traffic" class="card-title mb-0">Traffic</h4>
-          <div class="small text-muted">November 2017</div>
-        </b-col>
-        <b-col sm="7" class="d-none d-md-block">
-          <b-button type="button" variant="primary" class="float-right"><i class="icon-cloud-download"></i></b-button>
-          <b-button-toolbar class="float-right" aria-label="Toolbar with buttons group">
-            <b-form-radio-group class="mr-3" id="radiosBtn" buttons button-variant="outline-secondary" v-model="selected" name="radiosBtn">
-              <b-form-radio class="mx-0" value="Day">Day</b-form-radio>
-              <b-form-radio class="mx-0" value="Month">Month</b-form-radio>
-              <b-form-radio class="mx-0" value="Year">Year</b-form-radio>
-            </b-form-radio-group>
-          </b-button-toolbar>
-        </b-col>
-      </b-row>
-      <main-chart-example class="chart-wrapper" style="height:300px;margin-top:40px;" height="300"></main-chart-example>
-      <div slot="footer">
-        <ul>
-          <li>
-            <div class="text-muted">Visits</div>
-            <strong>29.703 Users (40%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="success" :value="40"></b-progress>
-          </li>
-          <li class="d-none d-md-table-cell">
-            <div class="text-muted">Unique</div>
-            <strong>24.093 Users (20%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="info" :value="20"></b-progress>
-          </li>
-          <li>
-            <div class="text-muted">Pageviews</div>
-            <strong>78.706 Views (60%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="warning" :value="60"></b-progress>
-          </li>
-          <li class="d-none d-md-table-cell">
-            <div class="text-muted">New Users</div>
-            <strong>22.123 Users (80%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="danger" :value="80"></b-progress>
-          </li>
-          <li class="d-none d-md-table-cell">
-            <div class="text-muted">Bounce Rate</div>
-            <strong>40.15%</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" :value="40"></b-progress>
-          </li>
-        </ul>
-      </div>
-    </b-card>
     <b-row>
       <b-col sm="6" lg="3">
-        <div class="social-box facebook">
-          <i class="fa fa-facebook"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[65, 59, 84, 84, 51, 55, 40]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>89k</strong>
-              <span>friends</span>
-            </li>
-            <li>
-              <strong>459</strong>
-              <span>feeds</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
-      </b-col>
-      <b-col sm="6" lg="3">
-        <div class="social-box twitter">
-          <i class="fa fa-twitter"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[1, 13, 9, 17, 34, 41, 38]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>973k</strong>
-              <span>followers</span>
-            </li>
-            <li>
-              <strong>1.792</strong>
-              <span>tweets</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
-      </b-col>
-      <b-col sm="6" lg="3">
-        <div class="social-box linkedin">
-          <i class="fa fa-linkedin"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[78, 81, 80, 45, 34, 12, 40]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>500+</strong>
-              <span>contacts</span>
-            </li>
-            <li>
-              <strong>292</strong>
-              <span>feeds</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
-      </b-col>
-      <b-col sm="6" lg="3">
-        <div class="social-box google-plus">
-          <i class="fa fa-google-plus"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[35, 23, 56, 22, 97, 23, 64]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>894</strong>
-              <span>followers</span>
-            </li>
-            <li>
-              <strong>92</strong>
-              <span>circles</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
+        <h2>New Courses </h2>
       </b-col>
     </b-row>
     <b-row>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-primary">
+          <b-card-body class="pb-0">
+            <b-dropdown class="float-right" variant="transparent p-0" right>
+              <template slot="button-content">
+                <i class="icon-settings"></i>
+              </template>
+              <b-dropdown-item>Action</b-dropdown-item>
+              <b-dropdown-item>Another action</b-dropdown-item>
+              <b-dropdown-item>Something else here...</b-dropdown-item>
+              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+            </b-dropdown>
+            <h4 class="mb-0">Adult Violin Beginner Lessons</h4>
+            <p>Starts June 2018</p>
+          </b-card-body>
+          <card-line1-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
+        </b-card>
+      </b-col>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-success">
+          <b-card-body class="pb-0">
+            <b-dropdown class="float-right" variant="transparent p-0" right no-caret>
+              <template slot="button-content">
+                <i class="icon-location-pin"></i>
+              </template>
+              <b-dropdown-item>Action</b-dropdown-item>
+              <b-dropdown-item>Another action</b-dropdown-item>
+              <b-dropdown-item>Something else here...</b-dropdown-item>
+              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+            </b-dropdown>
+            <h4 class="mb-0">Speciality Coffee Barrista Courses</h4>
+            <p>Starts July 2018</p>
+          </b-card-body>
+          <card-line2-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
+        </b-card>
+      </b-col>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-warning">
+          <b-card-body class="pb-0">
+            <b-dropdown class="float-right" variant="transparent p-0" right>
+              <template slot="button-content">
+                <i class="icon-settings"></i>
+              </template>
+              <b-dropdown-item>Action</b-dropdown-item>
+              <b-dropdown-item>Another action</b-dropdown-item>
+              <b-dropdown-item>Something else here...</b-dropdown-item>
+              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+            </b-dropdown>
+            <h4 class="mb-0">Basic Drone Pilot One-on-One</h4>
+            <p>Starts Aug 2018</p>
+          </b-card-body>
+          <card-line3-chart-example class="chart-wrapper" style="height:70px;" height="70"/>
+        </b-card>
+      </b-col>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-danger">
+          <b-card-body class="pb-0">
+            <b-dropdown class="float-right" variant="transparent p-0" right>
+              <template slot="button-content">
+                <i class="icon-settings"></i>
+              </template>
+              <b-dropdown-item>Action</b-dropdown-item>
+              <b-dropdown-item>Another action</b-dropdown-item>
+              <b-dropdown-item>Something else here...</b-dropdown-item>
+              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+            </b-dropdown>
+            <h4 class="mb-0">Incident Management Process</h4>
+            <p>Starts Sept 2018</p>
+          </b-card-body>
+          <card-bar-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
+        </b-card>
+      </b-col>
+    </b-row>
+
+    <b-row>
       <b-col md="12">
-        <b-card header="Traffic &amp; Sales">
+        <b-card header="Courses">
           <b-row>
             <b-col sm="12" lg="4">
               <b-row>
                 <b-col sm="6">
                   <Callout variant="info">
-                    <small class="text-muted">New Clients</small><br>
-                    <strong class="h4">9,123</strong>
+                    <small class="text-muted">New Students</small><br>
+                    <strong class="h4">23</strong>
                     <div class="chart-wrapper">
                       <callout-chart-example :data="[35, 23, 56, 22, 97, 23, 64]" variant="#20a8d8" width="80" height="30" />
                     </div>
@@ -219,8 +177,8 @@
                 </b-col>
                 <b-col sm="6">
                   <Callout variant="danger">
-                    <small class="text-muted">Recurring Clients</small><br>
-                    <strong class="h4">22,643</strong>
+                    <small class="text-muted">Continuing Students</small><br>
+                    <strong class="h4">40</strong>
                     <div class="chart-wrapper">
                       <callout-chart-example :data="[65, 59, 84, 84, 51, 55, 40]" variant="#f86c6b" width="80" height="30" />
                     </div>
@@ -293,7 +251,7 @@
                   </div>
                 </li>
                 <li class="legend">
-                  <b-badge pill variant="info"></b-badge> <small>New clients</small> &nbsp; <b-badge pill variant="danger"></b-badge> <small>Recurring clients</small>
+                  <b-badge pill variant="info"></b-badge> <small>New courses</small> &nbsp; <b-badge pill variant="danger"></b-badge> <small>Recurring courses</small>
                 </li>
               </ul>
             </b-col>
@@ -301,8 +259,8 @@
               <b-row>
                 <b-col sm="6">
                   <Callout variant="warning">
-                    <small class="text-muted">Pageviews</small><br>
-                    <strong class="h4">78,623</strong>
+                    <small class="text-muted">New Courses</small><br>
+                    <strong class="h4">63</strong>
                     <div class="chart-wrapper">
                       <callout-chart-example :data="[35, 23, 56, 22, 97, 23, 64]" variant="#f8cb00" width="80" height="30" />
                     </div>
@@ -310,8 +268,8 @@
                 </b-col>
                 <b-col sm="6">
                   <Callout variant="success">
-                    <small class="text-muted">Organic</small><br>
-                    <strong class="h4">49,123</strong>
+                    <small class="text-muted">Continuing Courses</small><br>
+                    <strong class="h4">34</strong>
                     <div class="chart-wrapper">
                       <callout-chart-example :data="[65, 59, 84, 84, 51, 55, 40]" variant="#4dbd74" width="80px" height="30" />
                     </div>
@@ -397,46 +355,44 @@
               </b-row>
               <hr class="mt-0">
               <ul class="icons-list">
+                <li><h6> Signups this week </h6>
                 <li>
-                  <i class="icon-screen-desktop bg-primary"></i>
+                  <i class="icon-user bg-primary"></i>
                   <div class="desc">
-                    <div class="title">iMac 4k</div>
-                    <small>Lorem ipsum dolor sit amet</small>
+                    <div class="title">Basic Coffee Barista</div>
+                    <small>To train participants in Basic Coffee Barista Skills and Latte Art</small>
                   </div>
                   <div class="value">
-                    <div class="small text-muted">Sold this week</div>
-                    <strong>1.924</strong>
+                    <strong>12</strong>
                   </div>
                   <div class="actions">
-                    <b-button variant="link" class="text-muted"><i class="icon-settings"></i></b-button>
+                    <b-button variant="link" class="text-muted"><i class="icon-link"></i></b-button>
                   </div>
                 </li>
                 <li>
-                  <i class="icon-screen-smartphone bg-info"></i>
+                  <i class="icon-user bg-info"></i>
                   <div class="desc">
-                    <div class="title">Samsung Galaxy Edge</div>
-                    <small>Lorem ipsum dolor sit amet</small>
+                    <div class="title">Bread Baking</div>
+                    <small>Culinary Techniques in Tomato and Garlic Bread</small>
                   </div>
                   <div class="value">
-                    <div class="small text-muted">Sold this week</div>
-                    <strong>1.224</strong>
+                    <strong>10</strong>
                   </div>
                   <div class="actions">
-                    <b-button variant="link" class="text-muted"><i class="icon-settings"></i></b-button>
+                    <b-button variant="link" class="text-muted"><i class="icon-link"></i></b-button>
                   </div>
                 </li>
                 <li>
-                  <i class="icon-screen-smartphone bg-warning"></i>
+                  <i class="icon-user bg-warning"></i>
                   <div class="desc">
-                    <div class="title">iPhone 6S</div>
-                    <small>Lorem ipsum dolor sit amet</small>
+                    <div class="title">Front-End Web Development</div>
+                    <small>Build a dynamic web app using modern JS library</small>
                   </div>
                   <div class="value">
-                    <div class="small text-muted">Sold this week</div>
-                    <strong>1.163</strong>
+                    <strong>9</strong>
                   </div>
                   <div class="actions">
-                    <b-button variant="link" class="text-muted"><i class="icon-settings"></i></b-button>
+                    <b-button variant="link" class="text-muted"><i class="icon-link"></i></b-button>
                   </div>
                 </li>
                 <li>
@@ -446,53 +402,49 @@
                     <small>Lorem ipsum dolor sit amet</small>
                   </div>
                   <div class="value">
-                    <div class="small text-muted">Sold this week</div>
-                    <strong>928</strong>
+                    <strong>8</strong>
                   </div>
                   <div class="actions">
-                    <b-button variant="link" class="text-muted"><i class="icon-settings"></i></b-button>
+                    <b-button variant="link" class="text-muted"><i class="icon-link"></i></b-button>
                   </div>
                 </li>
                 <li>
-                  <i class="icon-social-spotify bg-success"></i>
+                  <i class="icon-user bg-success"></i>
                   <div class="desc">
-                    <div class="title">Spotify Subscriptions</div>
-                    <small>Lorem ipsum dolor sit amet</small>
+                    <div class="title">Scrum Product Ownership</div>
+                    <small>Lead your Scrum teams by clearly defining project tasks</small>
                   </div>
                   <div class="value">
-                    <div class="small text-muted">Sold this week</div>
-                    <strong>893</strong>
+                    <strong>6</strong>
                   </div>
                   <div class="actions">
-                    <b-button variant="link" class="text-muted"><i class="icon-settings"></i></b-button>
+                    <b-button variant="link" class="text-muted"><i class="icon-link"></i></b-button>
                   </div>
                 </li>
                 <li>
-                  <i class="icon-cloud-download bg-danger"></i>
+                  <i class="icon-user bg-danger"></i>
                   <div class="desc">
-                    <div class="title">Ebook</div>
-                    <small>Lorem ipsum dolor sit amet</small>
+                    <div class="title">Full Stack Web Development</div>
+                    <small>uild complex server-side web applications</small>
                   </div>
                   <div class="value">
-                    <div class="small text-muted">Downloads</div>
-                    <strong>121.924</strong>
+                    <strong>5</strong>
                   </div>
                   <div class="actions">
-                    <b-button variant="link" class="text-muted"><i class="icon-settings"></i></b-button>
+                    <b-button variant="link" class="text-muted"><i class="icon-link"></i></b-button>
                   </div>
                 </li>
                 <li>
-                  <i class="icon-camera bg-warning"></i>
+                  <i class="icon-user bg-warning"></i>
                   <div class="desc">
-                    <div class="title">Photos</div>
-                    <small>Lorem ipsum dolor sit amet</small>
+                    <div class="title">Sunset Photography</div>
+                    <small>Mastering light at sunset</small>
                   </div>
                   <div class="value">
-                    <div class="small text-muted">Uploaded</div>
-                    <strong>12.125</strong>
+                    <strong>3</strong>
                   </div>
                   <div class="actions">
-                    <b-button variant="link" class="text-muted"><i class="icon-settings"></i></b-button>
+                    <b-button variant="link" class="text-muted"><i class="icon-link"></i></b-button>
                   </div>
                 </li>
                 <li class="divider text-center">
@@ -502,39 +454,7 @@
             </b-col>
           </b-row>
           <br/>
-          <b-table class="mb-0 table-outline" responsive="sm" hover :items="tableItems" :fields="tableFields" head-variant="light">
-            <div slot="avatar" class="avatar" slot-scope="item">
-              <img :src="item.value.url" class="img-avatar" alt="">
-              <span class="avatar-status" v-bind:class="{ 'bg-success': item.value.status == 'success',  'bg-warning': item.value.status == 'warning', 'bg-danger': item.value.status == 'danger', 'bg-secondary': item.value.status == '' }"></span>
-            </div>
-            <div slot="user" slot-scope="item">
-              <div>{{item.value.name}}</div>
-              <div class="small text-muted">
-                <span>
-                  <template v-if="item.value.new">New</template>
-                  <template v-else>Recurring</template>
-                </span> | Registered: {{item.value.registered}}
-              </div>
-            </div>
-            <i slot="country" class="h4 mb-0" :class="flag(item.value.flag)" slot-scope="item" :title="item.value.flag" :id="item.value.flag"></i>
-            <i class="flag-icon flag-icon-pw h1" title="pw" id="pw"></i>
-            <div slot="usage" slot-scope="item">
-              <div class="clearfix">
-                <div class="float-left">
-                  <strong>{{item.value.value}}%</strong>
-                </div>
-                <div class="float-right">
-                  <small class="text-muted">{{item.value.period}}</small>
-                </div>
-              </div>
-              <b-progress height={} class="progress-xs" v-model="item.value.value" :variant="variant(item.value.value)"></b-progress>
-            </div>
-            <i slot="payment" slot-scope="item" :class="item.value.icon" style="font-size:24px"></i>
-            <div slot="activity" slot-scope="item">
-              <div class="small text-muted">Last login</div>
-              <strong>{{item.value}}</strong>
-            </div>
-          </b-table>
+
         </b-card>
       </b-col>
     </b-row>
