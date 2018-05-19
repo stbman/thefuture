@@ -85,7 +85,7 @@ export default {
       e.preventDefault()
       console.log('Connecting')
       $('#exampleModal').removeClass('show')
-      $("#exampleModal").css({ 'display': 'none' })
+      $('#exampleModal').css({ 'display': 'none' })
 
       router.push('/dashboard')
     }
