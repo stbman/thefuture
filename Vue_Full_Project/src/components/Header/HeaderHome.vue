@@ -7,28 +7,39 @@
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" @click="sidebarToggle">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <b-navbar-nav class="d-md-down-none">
-      <b-nav-item class="px-3">WAHAHHAA</b-nav-item>
-      <b-nav-item class="px-3">Users</b-nav-item>
-      <b-nav-item class="px-3">Settings</b-nav-item>
-    </b-navbar-nav>
     <b-navbar-nav class="ml-auto">
-      <button type="button" class="btn btn-info">Connect with Linkedln</button>
-      <b-nav-item class="d-md-down-none">
-        <i class="icon-bell"></i>
-        <b-badge pill variant="danger">5</b-badge>
-      </b-nav-item>
-      <b-nav-item class="d-md-down-none">
-        <i class="icon-list"></i>
-      </b-nav-item>
-      <b-nav-item class="d-md-down-none">
-        <i class="icon-location-pin"></i>
-      </b-nav-item>
-      <HeaderDropdown/>
-    </b-navbar-nav>
-    <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" @click="asideToggle">
-      <span class="navbar-toggler-icon"></span>
+      <b-nav-item>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" @click="connectLinkedln">
+      Connect with Linkedln
     </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Connect With Linkedln</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> -->
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" @click="closeModal">Close</button>
+            <button type="button" class="btn btn-primary">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </b-nav-item>
+
+    </b-navbar-nav>
+
   </header>
 </template>
 <script>
@@ -55,7 +66,17 @@ export default {
     asideToggle (e) {
       e.preventDefault()
       document.body.classList.toggle('aside-menu-hidden')
-    }
+    },
+    connectLinkedln (e) {
+      e.preventDefault()
+      console.log('Connect')
+      $('#exampleModal').addClass('show')
+      $("#exampleModal").css({ 'display': "block" });
+    },
+    closeModal (e) {
+      e.preventDefault()
+      $('#exampleModal').removeClass('show')
+      $("#exampleModal").css({ 'display': "none" });    }
   }
 }
 </script>
