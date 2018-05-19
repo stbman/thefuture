@@ -73,13 +73,13 @@ export default {
       e.preventDefault()
       console.log('Connect to Linkedln')
       $('#exampleModal').addClass('show')
-      $("#exampleModal").css({ 'display': 'block' })
+      $('#exampleModal').css({ 'display': 'block' })
     },
     closeModal (e) {
       e.preventDefault()
       console.log('Connect to Linkedln')
       $('#exampleModal').removeClass('show')
-      $("#exampleModal").css({ 'display': 'none' })
+      $('#exampleModal').css({ 'display': 'none' })
     },
     connecting (e) {
       e.preventDefault()
