@@ -2,19 +2,23 @@
   <div class="animated fadeIn">
     <b-row>
       <b-col sm="6" lg="3">
+      <h2>My Skills Overview</h2>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="6" lg="3">
         <b-card no-body class="bg-primary">
           <b-card-body class="pb-0">
             <b-dropdown class="float-right" variant="transparent p-0" right>
               <template slot="button-content">
-                <i class="icon-settings"></i>
+                <i class="icon-star"></i>
               </template>
-              <b-dropdown-item>Action</b-dropdown-item>
-              <b-dropdown-item>Another action</b-dropdown-item>
-              <b-dropdown-item>Something else here...</b-dropdown-item>
-              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+              <b-dropdown-item>Sign Up</b-dropdown-item>
+              <b-dropdown-item>Add to Wishlist</b-dropdown-item>
+              <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">Web Programming</h4>
+            <p>You been recommend by <b>12</b> friends!</b></p>
           </b-card-body>
           <card-line1-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
@@ -24,15 +28,14 @@
           <b-card-body class="pb-0">
             <b-dropdown class="float-right" variant="transparent p-0" right no-caret>
               <template slot="button-content">
-                <i class="icon-location-pin"></i>
+                <i class="icon-star"></i>
               </template>
-              <b-dropdown-item>Action</b-dropdown-item>
-              <b-dropdown-item>Another action</b-dropdown-item>
-              <b-dropdown-item>Something else here...</b-dropdown-item>
-              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+              <b-dropdown-item>Sign Up</b-dropdown-item>
+              <b-dropdown-item>Add to Wishlist</b-dropdown-item>
+              <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">Negotiation Technique</h4>
+            <p>Newly recommended by <b>Aaron Tan</b>!</b></p>
           </b-card-body>
           <card-line2-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
@@ -42,15 +45,14 @@
           <b-card-body class="pb-0">
             <b-dropdown class="float-right" variant="transparent p-0" right>
               <template slot="button-content">
-                <i class="icon-settings"></i>
+                <i class="icon-star"></i>
               </template>
-              <b-dropdown-item>Action</b-dropdown-item>
-              <b-dropdown-item>Another action</b-dropdown-item>
-              <b-dropdown-item>Something else here...</b-dropdown-item>
-              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+              <b-dropdown-item>Sign Up</b-dropdown-item>
+              <b-dropdown-item>Add to Wishlist</b-dropdown-item>
+              <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">UI / UX</h4>
+            <p>Your fastest growing skill since your completion of <b>Mastering UI (4th of Feb, 2018)</b>, a Skill Future Course</p>
           </b-card-body>
           <card-line3-chart-example class="chart-wrapper" style="height:70px;" height="70"/>
         </b-card>
@@ -60,15 +62,14 @@
           <b-card-body class="pb-0">
             <b-dropdown class="float-right" variant="transparent p-0" right>
               <template slot="button-content">
-                <i class="icon-settings"></i>
+                <i class="icon-star"></i>
               </template>
-              <b-dropdown-item>Action</b-dropdown-item>
-              <b-dropdown-item>Another action</b-dropdown-item>
-              <b-dropdown-item>Something else here...</b-dropdown-item>
-              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+              <b-dropdown-item>Sign Up</b-dropdown-item>
+              <b-dropdown-item>Add to Wishlist</b-dropdown-item>
+              <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">9.823</h4>
-            <p>Members online</p>
+            <h4 class="mb-0">Web Backend Programming</h4>
+            <p>You have no related skill in this field! Aquring this skill can drasticly improve your overall competency!</p>
           </b-card-body>
           <card-bar-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
