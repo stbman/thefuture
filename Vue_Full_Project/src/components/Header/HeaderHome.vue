@@ -26,11 +26,12 @@
             </button> -->
           </div>
           <div class="modal-body">
-            ...
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" @click="closeModal">Close</button>
-            <button type="button" class="btn btn-primary">Connect</button>
+            <button type="button" class="btn btn-primary" @click="connecting">Connect</button>
           </div>
         </div>
       </div>
@@ -44,6 +45,7 @@
 </template>
 <script>
 import HeaderDropdown from './HeaderDropdown.vue'
+import router from '../../router'
 
 export default {
   name: 'HeaderHome',
@@ -69,14 +71,24 @@ export default {
     },
     connectLinkedln (e) {
       e.preventDefault()
-      console.log('Connect')
+      console.log('Connect to Linkedln')
       $('#exampleModal').addClass('show')
-      $("#exampleModal").css({ 'display': "block" });
+      $("#exampleModal").css({ 'display': 'block' })
     },
     closeModal (e) {
       e.preventDefault()
+      console.log('Connect to Linkedln')
       $('#exampleModal').removeClass('show')
-      $("#exampleModal").css({ 'display': "none" });    }
+      $("#exampleModal").css({ 'display': 'none' })
+    },
+    connecting (e) {
+      e.preventDefault()
+      console.log('Connecting')
+      $('#exampleModal').removeClass('show')
+      $("#exampleModal").css({ 'display': 'none' })
+
+      router.push('/dashboard')
+    }
   }
 }
 </script>
