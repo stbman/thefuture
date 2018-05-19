@@ -193,7 +193,6 @@
             </div>
             <!-- <i slot="payment" slot-scope="item" :class="item.value.icon" style="font-size:24px"></i> -->
             <div slot="activity" slot-scope="item">
-              <div class="small text-muted">Last lesson</div>
               <strong>{{item.value}}</strong>
             </div>
           </b-table>
