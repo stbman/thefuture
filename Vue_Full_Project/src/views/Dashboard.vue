@@ -52,7 +52,7 @@
               <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
             <h4 class="mb-0">UI / UX</h4>
-            <p>Your fastest growing skill since your completion of <b>Mastering UI (4th of Feb, 2018)</b>, a Skill Future Course</p>
+            <p>Most recommendation after completing <b>Mastering UI</b>!</p>
           </b-card-body>
           <card-line3-chart-example class="chart-wrapper" style="height:70px;" height="70"/>
         </b-card>
@@ -68,11 +68,83 @@
               <b-dropdown-item>Add to Wishlist</b-dropdown-item>
               <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
-            <h4 class="mb-0">Web Backend Programming</h4>
-            <p>You have no related skill in this field! Aquring this skill can drasticly improve your overall competency!</p>
+            <h4 class="mb-0">Social Media Engineering</h4>
+            <p>Your skill is in hot demand right now!</p>
           </b-card-body>
           <card-bar-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
+      </b-col>
+    </b-row>
+
+    <b-row>
+      <b-col sm="6" lg="3">
+      <h2>Recommended Skills</h2>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="6" lg="3">
+        <div class="social-box facebook">
+          <h4 class="mb-0">Web Backend Programming</h4>
+            <p>You have no related skill in this field! Aquring this skill can drasticly improve your overall competency!</p>
+          <ul>
+            <li>
+              <strong>23</strong>
+              <span>Friends with this skill</span>
+            </li>
+            <li>
+              <strong>59</strong>
+              <span>Companies Seeking</span>
+            </li>
+          </ul>
+        </div><!--/.social-box-->
+      </b-col>
+      <b-col sm="6" lg="3">
+        <div class="social-box twitter">
+          <h4 class="mb-0">UI Art Creation</h4>
+            <p>You are very highly reated in this field! Just a bit more and you are a leader in this field among your friends!</p>
+          <ul>
+            <li>
+              <strong>72</strong>
+              <span>Friends with this skill</span>
+            </li>
+            <li>
+              <strong>4th</strong>
+              <span>best ranked in your circle</span>
+            </li>
+          </ul>
+        </div><!--/.social-box-->
+      </b-col>
+      <b-col sm="6" lg="3">
+        <div class="social-box linkedin">
+          <h4 class="mb-0">Angular JS</h4>
+            <p>Your competency with <b>React</b> is a hit! You might want to pick up this skill as well!</p>
+          <ul>
+            <li>
+              <strong>61</strong>
+              <span>Friends with this skill</span>
+            </li>
+            <li>
+              <strong>80%</strong>
+              <span>Companies require this skill</span>
+            </li>
+          </ul>
+        </div><!--/.social-box-->
+      </b-col>
+      <b-col sm="6" lg="3">
+        <div class="social-box google-plus">
+          <h4 class="mb-0">Baking Bread</h4>
+            <p>Your recent activities happens to be around <b>baking</b>! Why not pick it up professionally?</p>
+          <ul>
+            <li>
+              <strong>23</strong>
+              <span>Friends with this skill</span>
+            </li>
+            <li>
+              <strong>16</strong>
+              <span>Related activity this week</span>
+            </li>
+          </ul>
+        </div><!--/.social-box-->
       </b-col>
     </b-row>
 
@@ -124,80 +196,7 @@
         </ul>
       </div>
     </b-card>
-    <b-row>
-      <b-col sm="6" lg="3">
-        <div class="social-box facebook">
-          <i class="fa fa-facebook"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[65, 59, 84, 84, 51, 55, 40]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>89k</strong>
-              <span>friends</span>
-            </li>
-            <li>
-              <strong>459</strong>
-              <span>feeds</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
-      </b-col>
-      <b-col sm="6" lg="3">
-        <div class="social-box twitter">
-          <i class="fa fa-twitter"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[1, 13, 9, 17, 34, 41, 38]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>973k</strong>
-              <span>followers</span>
-            </li>
-            <li>
-              <strong>1.792</strong>
-              <span>tweets</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
-      </b-col>
-      <b-col sm="6" lg="3">
-        <div class="social-box linkedin">
-          <i class="fa fa-linkedin"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[78, 81, 80, 45, 34, 12, 40]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>500+</strong>
-              <span>contacts</span>
-            </li>
-            <li>
-              <strong>292</strong>
-              <span>feeds</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
-      </b-col>
-      <b-col sm="6" lg="3">
-        <div class="social-box google-plus">
-          <i class="fa fa-google-plus"></i>
-          <div class="chart-wrapper">
-            <social-box-chart-example :data="[35, 23, 56, 22, 97, 23, 64]" height="90"/>
-          </div>
-          <ul>
-            <li>
-              <strong>894</strong>
-              <span>followers</span>
-            </li>
-            <li>
-              <strong>92</strong>
-              <span>circles</span>
-            </li>
-          </ul>
-        </div><!--/.social-box-->
-      </b-col>
-    </b-row>
+
     <b-row>
       <b-col md="12">
         <b-card header="Traffic &amp; Sales">
