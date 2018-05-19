@@ -84,8 +84,10 @@
     <b-row>
       <b-col sm="6" lg="3">
         <div class="social-box facebook">
-          <h4 class="mb-0">Web Backend Programming</h4>
+          <div class="bg-danger">
+            <h4 class="mb-0">Web Backend Programming</h4>
             <p>You have no related skill in this field! Aquring this skill can drasticly improve your overall competency!</p>
+          </div>
           <ul>
             <li>
               <strong>23</strong>
@@ -100,8 +102,10 @@
       </b-col>
       <b-col sm="6" lg="3">
         <div class="social-box twitter">
-          <h4 class="mb-0">UI Art Creation</h4>
+          <div class="bg-info">
+            <h4 class="mb-0">UI Art Creation</h4>
             <p>You are very highly reated in this field! Just a bit more and you are a leader in this field among your friends!</p>
+          </div>
           <ul>
             <li>
               <strong>72</strong>
@@ -116,8 +120,10 @@
       </b-col>
       <b-col sm="6" lg="3">
         <div class="social-box linkedin">
-          <h4 class="mb-0">Angular JS</h4>
-            <p>Your competency with <b>React</b> is a hit! You might want to pick up this skill as well!</p>
+          <div class="bg-primary">
+            <h4 class="mb-0">Angular JS</h4>
+              <p>Your competency with <b>React</b> is a hit! You might want to pick up this skill as well!</p>
+          </div>
           <ul>
             <li>
               <strong>61</strong>
@@ -132,8 +138,10 @@
       </b-col>
       <b-col sm="6" lg="3">
         <div class="social-box google-plus">
-          <h4 class="mb-0">Baking Bread</h4>
+          <div class="bg-warning">
+            <h4 class="mb-0">Baking Bread</h4>
             <p>Your recent activities happens to be around <b>baking</b>! Why not pick it up professionally?</p>
+          </div>
           <ul>
             <li>
               <strong>23</strong>
