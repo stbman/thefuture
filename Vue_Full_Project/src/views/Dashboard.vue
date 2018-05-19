@@ -18,7 +18,7 @@
               <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
             <h4 class="mb-0">Web Programming</h4>
-            <p>You been recommend by <b>12</b> friends!</b></p>
+            <p>You been recommend by <b>12 friends!</b></p>
           </b-card-body>
           <card-line1-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
@@ -35,7 +35,7 @@
               <b-dropdown-item>Not Interested</b-dropdown-item>
             </b-dropdown>
             <h4 class="mb-0">Negotiation Technique</h4>
-            <p>Newly recommended by <b>Aaron Tan</b>!</b></p>
+            <p>Newly recommended by <b>Aaron Tan</b>!</p>
           </b-card-body>
           <card-line2-chart-example class="chart-wrapper px-3" style="height:70px;" height="70"/>
         </b-card>
@@ -498,7 +498,10 @@
             </b-col>
           </b-row>
           <br/>
-          <b-table class="mb-0 table-outline" responsive="sm" hover :items="tableItems" :fields="tableFields" head-variant="light">
+
+
+          <h5>Your Friends</h5>
+          <b-table class="mb-0 table-outline" responsive="sm" hover :items="tableItems" :fields="tableFields" head-variant="light" align="left">
             <div slot="avatar" class="avatar" slot-scope="item">
               <img :src="item.value.url" class="img-avatar" alt="">
               <span class="avatar-status" v-bind:class="{ 'bg-success': item.value.status == 'success',  'bg-warning': item.value.status == 'warning', 'bg-danger': item.value.status == 'danger', 'bg-secondary': item.value.status == '' }"></span>
@@ -512,8 +515,11 @@
                 </span> | Registered: {{item.value.registered}}
               </div>
             </div>
-            <i slot="country" class="h4 mb-0" :class="flag(item.value.flag)" slot-scope="item" :title="item.value.flag" :id="item.value.flag"></i>
-            <i class="flag-icon flag-icon-pw h1" title="pw" id="pw"></i>
+            <div slot="country" slot-scope="item">
+              <div>{{item.value.name}}</div>
+            </div>
+            <!-- <i slot="country" class="h4 mb-0" :class="flag(item.value.flag)" slot-scope="item" :title="item.value.flag" :id="item.value.flag"></i>
+            <i class="flag-icon flag-icon-pw h1" title="pw" id="pw"></i> -->
             <div slot="usage" slot-scope="item">
               <div class="clearfix">
                 <div class="float-left">
@@ -565,48 +571,48 @@ export default {
       tableItems: [
         {
           avatar: { url: 'static/img/avatars/1.jpg', status: 'success' },
-          user: { name: 'Yiorgos Avraamu', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'USA', flag: 'us' },
+          user: { name: 'Charissa Tang', new: true, registered: 'Jan 1, 2018' },
+          country: { name: 'Back End Web Development', flag: 'us' },
           usage: { value: 50, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Mastercard', icon: 'fa fa-cc-mastercard' },
           activity: '10 sec ago'
         },
         {
           avatar: { url: 'static/img/avatars/2.jpg', status: 'danger' },
-          user: { name: 'Avram Tarasios', new: false, registered: 'Jan 1, 2015' },
-          country: { name: 'Brazil', flag: 'br' },
+          user: { name: 'Rebecca Lee', new: false, registered: 'Feb 10, 2017' },
+          country: { name: 'Search Engine Optimisation', flag: 'br' },
           usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Visa', icon: 'fa fa-cc-visa' },
           activity: '5 minutes ago'
         },
         {
           avatar: { url: 'static/img/avatars/3.jpg', status: 'warning' },
-          user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'India', flag: 'in' },
+          user: { name: 'Jonathan Lim', new: true, registered: 'Mar 20, 2018' },
+          country: { name: 'Beginner Pop Piano Lessons', flag: 'in' },
           usage: { value: 74, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Stripe', icon: 'fa fa-cc-stripe' },
           activity: '1 hour ago'
         },
         {
           avatar: { url: 'static/img/avatars/4.jpg', status: '' },
-          user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'France', flag: 'fr' },
+          user: { name: 'Melissa Chew', new: true, registered: 'Dec 13, 2016' },
+          country: { name: 'Programming Fundamentals', flag: 'fr' },
           usage: { value: 98, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'PayPal', icon: 'fa fa-paypal' },
           activity: 'Last month'
         },
         {
           avatar: { url: 'static/img/avatars/5.jpg', status: 'success' },
-          user: { name: 'Agapetus Tadeáš', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'Spain', flag: 'es' },
+          user: { name: 'Alicia Tan', new: true, registered: 'May 1, 2018' },
+          country: { name: 'Basic Pet Groomer', flag: 'es' },
           usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Google Wallet', icon: 'fa fa-google-wallet' },
           activity: 'Last week'
         },
         {
           avatar: { url: 'static/img/avatars/6.jpg', status: 'danger' },
-          user: { name: 'Friderik Dávid', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'Poland', flag: 'pl' },
+          user: { name: 'David Lee', new: true, registered: 'Nov 1, 2017' },
+          country: { name: 'Data Analytics using R', flag: 'pl' },
           usage: { value: 43, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Amex', icon: 'fa fa-cc-amex' },
           activity: 'Last week'
@@ -615,21 +621,18 @@ export default {
       tableFields: {
         avatar: {
           label: '<i class="icon-people"></i>',
-          class: 'text-center'
         },
         user: {
-          label: 'User'
+          label: 'Friend'
         },
         country: {
-          label: 'Country',
-          class: 'text-center'
+          label: 'Current Course',
         },
         usage: {
-          label: 'Usage'
+          label: 'Completion'
         },
         payment: {
-          label: 'Payment method',
-          class: 'text-center'
+          label: 'Payment method'
         },
         activity: {
           label: 'Activity'

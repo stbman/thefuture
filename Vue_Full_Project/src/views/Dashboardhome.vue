@@ -251,7 +251,7 @@
                   </div>
                 </li>
                 <li class="legend">
-                  <b-badge pill variant="info"></b-badge> <small>New courses</small> &nbsp; <b-badge pill variant="danger"></b-badge> <small>Recurring courses</small>
+                  <b-badge pill variant="info"></b-badge> <small>New courses</small> &nbsp; <b-badge pill variant="danger"></b-badge> <small>Continuing courses</small>
                 </li>
               </ul>
             </b-col>
