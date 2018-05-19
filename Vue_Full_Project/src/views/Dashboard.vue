@@ -191,9 +191,9 @@
               </div>
               <b-progress height={} class="progress-xs" v-model="item.value.value" :variant="variant(item.value.value)"></b-progress>
             </div>
-            <i slot="payment" slot-scope="item" :class="item.value.icon" style="font-size:24px"></i>
+            <!-- <i slot="payment" slot-scope="item" :class="item.value.icon" style="font-size:24px"></i> -->
             <div slot="activity" slot-scope="item">
-              <div class="small text-muted">Last login</div>
+              <div class="small text-muted">Last lesson</div>
               <strong>{{item.value}}</strong>
             </div>
           </b-table>
@@ -233,49 +233,49 @@ export default {
           avatar: { url: 'static/img/avatars/1.jpg', status: 'success' },
           user: { name: 'Charissa Tang', new: true, registered: 'Jan 1, 2018' },
           country: { name: 'Back End Web Development', flag: 'us' },
-          usage: { value: 50, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          usage: { value: 50, period: 'May 11, 2018 - Jul 10, 2018' },
           payment: { name: 'Mastercard', icon: 'fa fa-cc-mastercard' },
-          activity: '10 sec ago'
+          activity: '13 May 2018'
         },
         {
           avatar: { url: 'static/img/avatars/2.jpg', status: 'danger' },
           user: { name: 'Rebecca Lee', new: false, registered: 'Feb 10, 2017' },
           country: { name: 'Search Engine Optimisation', flag: 'br' },
-          usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          usage: { value: 22, period: 'Apr 11, 2018 - Sept 10, 2018' },
           payment: { name: 'Visa', icon: 'fa fa-cc-visa' },
-          activity: '5 minutes ago'
+          activity: '10 May 2018'
         },
         {
           avatar: { url: 'static/img/avatars/3.jpg', status: 'warning' },
           user: { name: 'Jonathan Lim', new: true, registered: 'Mar 20, 2018' },
           country: { name: 'Beginner Pop Piano Lessons', flag: 'in' },
-          usage: { value: 74, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          usage: { value: 74, period: 'Apr 6, 2018 - Sept 10, 2018' },
           payment: { name: 'Stripe', icon: 'fa fa-cc-stripe' },
-          activity: '1 hour ago'
+          activity: '9 April 2018'
         },
         {
           avatar: { url: 'static/img/avatars/4.jpg', status: '' },
           user: { name: 'Melissa Chew', new: true, registered: 'Dec 13, 2016' },
           country: { name: 'Programming Fundamentals', flag: 'fr' },
-          usage: { value: 98, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          usage: { value: 98, period: 'Feb 1, 2018 - Jun 10, 2018' },
           payment: { name: 'PayPal', icon: 'fa fa-paypal' },
-          activity: 'Last month'
+          activity: '20 Feb 2018'
         },
         {
           avatar: { url: 'static/img/avatars/5.jpg', status: 'success' },
           user: { name: 'Alicia Tan', new: true, registered: 'May 1, 2018' },
           country: { name: 'Basic Pet Groomer', flag: 'es' },
-          usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          usage: { value: 22, period: 'May 6, 2018 - Aug 10, 2018' },
           payment: { name: 'Google Wallet', icon: 'fa fa-google-wallet' },
-          activity: 'Last week'
+          activity: '8 May 2018'
         },
         {
           avatar: { url: 'static/img/avatars/6.jpg', status: 'danger' },
           user: { name: 'David Lee', new: true, registered: 'Nov 1, 2017' },
           country: { name: 'Data Analytics using R', flag: 'pl' },
-          usage: { value: 43, period: 'Jun 11, 2015 - Jul 10, 2015' },
+          usage: { value: 43, period: 'Feb 2, 2018 - Jul 10, 2018' },
           payment: { name: 'Amex', icon: 'fa fa-cc-amex' },
-          activity: 'Last week'
+          activity: '20 March 2018'
         }
       ],
       tableFields: {
@@ -291,11 +291,8 @@ export default {
         usage: {
           label: 'Completion'
         },
-        payment: {
-          label: 'Payment method'
-        },
         activity: {
-          label: 'Activity'
+          label: 'Last Lesson'
         }
       }
     }
