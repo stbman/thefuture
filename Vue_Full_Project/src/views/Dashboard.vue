@@ -104,7 +104,7 @@
         <div class="social-box twitter">
           <div class="bg-info">
             <h4 class="mb-0">UI Art Creation</h4>
-            <p>You are very highly reated in this field! Just a bit more and you are a leader in this field among your friends!</p>
+            <p>You are very highly rated in this field! Just a bit more and you are a leader in this field among your friends!</p>
           </div>
           <ul>
             <li>
@@ -156,6 +156,49 @@
       </b-col>
     </b-row>
 
+    <b-row>
+      <b-col sm="6" lg="3">
+      <h2>Top Update</h2>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-primary">
+          <b-card-body class="pb-0">
+            <h4 class="mb-0">Baking Tempeture Demystified!</h4>
+            <p>Ever wonder why your cake taste so differently under different... <br><br><br><b>Read More!</b></p>
+          </b-card-body>
+          <b-card-body class="pb-0" style="height:20px;" height="20"/>
+        </b-card>
+      </b-col>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-info">
+          <b-card-body class="pb-0">
+            <h4 class="mb-0">Google I/O: Web Impact</h4>
+            <p>New voice assistance introduces new problem with app design. UX will now have to... <br><br><br><b>Read More!</b></p>
+          </b-card-body>
+          <b-card-body class="pb-0" style="height:20px;" height="20"/>
+        </b-card>
+      </b-col>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-warning">
+          <b-card-body class="pb-0">
+            <h4 class="mb-0">Hit Refresh! Satya Nadella's Hit Book!</h4>
+            <p>Microsoft CEO surprising hit on corporate culture changes is a refrehsing and insightful... <br><br><b>Read More!</b></p>
+          </b-card-body>
+          <b-card-body class="pb-0" style="height:20px;" height="20"/>
+        </b-card>
+      </b-col>
+      <b-col sm="6" lg="3">
+        <b-card no-body class="bg-danger">
+          <b-card-body class="pb-0">
+            <h4 class="mb-0">Facebook Data Leak: Protect yourself!</h4>
+            <p>Find out if your personal data have been leak by yourself or your friend. Learn about how to protect... <br><br><b>Read More!</b></p>
+          </b-card-body>
+          <b-card-body class="pb-0" style="height:20px;" height="20"/>
+        </b-card>
+      </b-col>
+    </b-row>
 
     <b-row>
       <b-col md="12">
